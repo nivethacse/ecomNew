@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { NavLink as Link, useLocation } from 'react-router-dom'
+import { NavLink as Link } from 'react-router-dom'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 function Navbar() {
