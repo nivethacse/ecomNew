@@ -4,7 +4,6 @@ import { NavLink as Link, useLocation } from 'react-router-dom'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 function Navbar() {
-    const path = useLocation().pathname
     const token = window.localStorage.getItem('auth')
     const [isOpen, setIsOpen] = useState(false)
     return (
