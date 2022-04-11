@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { NavLink as Link } from 'react-router-dom'
+import { NavLink as Link, useLocation } from 'react-router-dom'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 function Navbar() {
+     const path = useLocation().pathname
     const token = window.localStorage.getItem('auth')
     const [isOpen, setIsOpen] = useState(false)
     return (
         <Wrapper className='section-center'>
-            <Link to='/'><h2>FurniStore</h2></Link>
+            <Link to={path}><h2>FurniStore</h2></Link>
             <div className='links'>
                 <Link activeClassName="active-link" exact to='/'>Home</Link>
                 <Link activeClassName="active-link" to='/products'>Products</Link>
