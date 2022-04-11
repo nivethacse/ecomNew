@@ -5,7 +5,7 @@ import { useCartContext } from '../context/CartContext'
 import styled from 'styled-components'
 import ImageContainer from '../components/ImageContainer'
 import { useHistory, useParams } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+
 import BreadCrumb from '../components/BreadCrumb'
 function ProductDetail() {
     const { id } = useParams()
